@@ -3,7 +3,7 @@ import homeCss from './home.module.scss'
 import axios from 'axios'
 export default class home extends Component {
     componentDidMount() {
-        axios.get('http://test.caidj.cn/mobileOrder/indexItem')
+        axios.get('/api/app/newProduct/productList')
     }
 
     render() {
